@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <title>Log-in</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- First -->
+        <div class="col-md-5 first">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <img src="logo.svg" class="img-fluid" alt="" />
+              </div>
+              <div class="col-md-4">
+                <img class="img-fluid oneCr" src="oneCrLogo.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- Carousel -->
+            <div
+              id="carouselExampleCaptions carousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="slide1.svg" class="d-block w-100" alt="..." />
+                  <p class="para text-center fw-bolder fs-5">
+                    Use One Platform. Trade Seamlessly.
+                  </p>
+                  <p class="text-center fw-light fs-6">
+                    Stocks, derivatives, commodities, mutual funds, or
+                    currencies — find everything in one place
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <img src="slide2.svg" class="d-block w-100" alt="..." />
+                  <p class="para text-center fw-bolder fs-5">
+                    Minimum Documents. Quick Onboarding.
+                  </p>
+                  <p class="text-center fw-light fs-6">
+                    Start with just PAN Card. Bank Statements, Aadhaar Card, and
+                    Cancelled Cheque required only if needed
+                  </p>
+                </div>
+                <!-- class="text-center fs-5" -->
+                <div class="carousel-item">
+                  <img src="slide3.svg" class="d-block w-100" alt="..." />
+                  <p class="para text-center fw-bolder fs-5">
+                    Get Context. Make Smart Decisions.
+                  </p>
+                  <p class="text-center fw-light fs-6">
+                    Understand the what and the why behind the market. Learn
+                    on-the-go
+                  </p>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Second -->
+        <div class="col-md-7">
+          <!-- Log-in -->
+          <div class="row justify-content-evenly">
+            <div class="col-md-8 col-sm-8">
+              <div class="need">
+                <button
+                  class="canva"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasBottom"
+                  aria-controls="offcanvasBottom"
+                >
+                  <i class="i bi bi-info-circle"></i>
+                  <p class="text-end text-primary fw-normal">NEED_HELP?</p>
+                </button>
+
+                <div
+                  class="offcanvas offcanvas-bottom"
+                  tabindex="-1"
+                  id="offcanvasBottom"
+                  aria-labelledby="offcanvasBottomLabel"
+                >
+                  <div class="offcanvas-body small">
+                    <!-- hidden carousel -->
+                    <div
+                      id="carouselExampleCaptions "
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="slide1.svg"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                          <p class="para text-center fw-bolder fs-5">
+                            Use One Platform. Trade Seamlessly.
+                          </p>
+                          <p class="text-center fw-light fs-6">
+                            Stocks, derivatives, commodities, mutual funds, or
+                            currencies — find everything in one place
+                          </p>
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="slide2.svg"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                          <p class="para text-center fw-bolder fs-5">
+                            Minimum Documents. Quick Onboarding.
+                          </p>
+                          <p class="text-center fw-light fs-6">
+                            Start with just PAN Card. Bank Statements, Aadhaar
+                            Card, and Cancelled Cheque required only if needed
+                          </p>
+                        </div>
+                        <!-- class="text-center fs-5" -->
+                        <div class="carousel-item">
+                          <img
+                            src="slide3.svg"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                          <p class="para text-center fw-bolder fs-5">
+                            Get Context. Make Smart Decisions.
+                          </p>
+                          <p class="text-center fw-light fs-6">
+                            Understand the what and the why behind the market.
+                            Learn on-the-go
+                          </p>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4 class="fs-5">Register with your mobile number</h4>
+              <form class="form-floating">
+                <input
+                  type="text"
+                  class="form-control is-invalid"
+                  id="floatingInputInvalid"
+                  placeholder="+91"
+                />
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                  Mobile number is mandatory. Don't leave it blank
+                </div>
+                <label for="floatingInputInvalid">Enter mobile number</label>
+              </form>
+
+              <form class="form-floating">
+                <input
+                  type="text"
+                  class="form-control is-invalid"
+                  id="floatingInputInvalid"
+                  placeholder="+91"
+                />
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                  OTP is mandatory. Don't leave it blank
+                </div>
+                <label for="floatingInputInvalid">Enter OTP</label>
+              </form>
+              <p id="referal">Use referal code.(Optional)</p>
+              <p id="MM" class="fs-6">MMQYA</p>
+              <p id="terms">
+                By entering OTP you agree with our
+                <a href="">Terms and Conditions</a>
+              </p>
+              <button type="button" class="btn" disabled>
+                <p class="text-light">CONTINUE</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
